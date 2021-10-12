@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:80 checkServicesStatus:app
+web: python checkServicesStatus.py
