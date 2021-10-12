@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:8080 checkServicesStatus:app
+web: gunicorn --bind 0.0.0.0:80 checkServicesStatus:app
