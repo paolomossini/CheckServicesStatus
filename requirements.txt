@@ -1,0 +1,5 @@
+flask
+requests
+json
+urllib.request 
+bs4
