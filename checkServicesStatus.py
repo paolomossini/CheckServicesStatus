@@ -104,34 +104,23 @@ def hello_world():
     tr:nth-child(even) {
     background-color: #dddddd;
     }
-
-    .collapsible {
-        background-color: #777;
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: center;
-        outline: none;
-    }
     </style>
     </head>
     <body>
 
-    <h2><button type="button" class="collapsible">PS Services Status</button></h2>
+    <h2>PS Services Status</h2>
 
     <table>
     """ + psStatus() + """
     </table>
 
-    <h2><button type="button" class="collapsible">XBox Services Status</button></h2>
+    <h2>XBox Services Status</h2>
 
     <table>
     """ + xboxStatus() + """
     </table>
 
-    <h2><button type="button" class="collapsible">Google Services Status</button></h2>
+    <h2>Google Services Status</h2>
 
     <table>
     """ + googleStatus() + """
