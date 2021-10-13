@@ -120,22 +120,45 @@ def hello_world():
     <body>
 
     <h2><button type="button" class="collapsible">PS Services Status</button></h2>
-
+    
+    <div class="content">
     <table>
     """ + psStatus() + """
     </table>
+    </div>
 
     <h2><button type="button" class="collapsible">XBox Services Status</button></h2>
 
+    <div class="content">
     <table>
     """ + xboxStatus() + """
     </table>
+    </div>
 
     <h2><button type="button" class="collapsible">Google Services Status</button></h2>
 
+    <div class="content">
     <table>
     """ + googleStatus() + """
     </table>
+    </div>S
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+    </script>
 
     </body>
     </html>"""
