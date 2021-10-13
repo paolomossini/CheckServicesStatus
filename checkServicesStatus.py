@@ -130,20 +130,22 @@ def hello_world():
     </head>
     <body>
 
-    <button type="button" class="collapsible">PS Services Status</button>
+    <button type="button" class="collapsible">PSN Services Status</button>
     <div class="content">
     <table>
     """ + psStatus() + """
     </table>
     </div>
+    <br>
 
-    <button type="button" class="collapsible">XBox Services Status</button>
+    <button type="button" class="collapsible">Xbox Services Status</button>
 
     <div class="content">
     <table>
     """ + xboxStatus() + """
     </table>
     </div>
+    <br>
 
     <button type="button" class="collapsible">Google Services Status</button>
 
@@ -152,6 +154,7 @@ def hello_world():
     """ + googleStatus() + """
     </table>
     </div>
+    <br>
 
     <script>
     var coll = document.getElementsByClassName("collapsible");
