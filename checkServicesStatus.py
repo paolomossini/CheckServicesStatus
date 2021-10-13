@@ -105,6 +105,10 @@ def hello_world():
     background-color: #dddddd;
     }
 
+    .active, .collapsible:hover {
+    background-color: #555;
+    }
+
     .collapsible {
         background-color: #777;
         color: white;
@@ -115,19 +119,25 @@ def hello_world():
         text-align: center;
         outline: none;
     }
+
+    .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    }
     </style>
     </head>
     <body>
 
-    <h2><button type="button" class="collapsible">PS Services Status</button></h2>
-    
+    <button type="button" class="collapsible">PS Services Status</button>
     <div class="content">
     <table>
     """ + psStatus() + """
     </table>
     </div>
 
-    <h2><button type="button" class="collapsible">XBox Services Status</button></h2>
+    <button type="button" class="collapsible">XBox Services Status</button>
 
     <div class="content">
     <table>
@@ -135,13 +145,13 @@ def hello_world():
     </table>
     </div>
 
-    <h2><button type="button" class="collapsible">Google Services Status</button></h2>
+    <button type="button" class="collapsible">Google Services Status</button>
 
     <div class="content">
     <table>
     """ + googleStatus() + """
     </table>
-    </div>S
+    </div>
 
     <script>
     var coll = document.getElementsByClassName("collapsible");
@@ -166,8 +176,3 @@ def hello_world():
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
 
-
-
-psStatus()
-googleStatus()
-xboxStatus()
